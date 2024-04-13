@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+@font-face {
+  font-family: consistant;
+  src: url("./benogi-font/BenogiRegular-0WJ9v.ttf");
+}
+
+body {
+  font-family:consistant;
+  color: white;
+  background-color: black; 
+  margin: 0;
+  padding: 20px;
+}
+
+#theContent {
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+#navLinks {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#navLinks a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+#homeTitle {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#griddy {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  gap: 20px; 
+}
+
+
+.card {
+  background-color: white;
+  border: 3px solid gray;
+  border-radius: 8px;
+  overflow: hidden; 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+  transition: transform 0.2s;  
+}
+
+.card:hover {
+  transform: translateY(-5px); 
+}
+
+.cardContent {
+  padding: 15px;
+}
+
+.thumbnail {
+  width: 100%; 
+  display: block;
+  object-fit: cover; 
+}
+
+.previewTitle {
+  text-align: center; 
+  margin-top: 10px; 
+}
+
+.description {
+  font-size: 15px; 
+  text-align: center;
+  color: white; 
+  margin-top: 15px; 
+}
+
+.projectHeroImage {
+  max-width: 100%;
+  max-height: 80vh; 
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#projects {
+  padding: 20px;
+}
